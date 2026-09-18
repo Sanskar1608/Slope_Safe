@@ -18,7 +18,7 @@ import {
   Info
 } from 'lucide-react';
 import { PinnedLocationFactors, RiskLevel, AppSettings, MonitoredLocation } from '../types';
-import { getRiskColorClass } from '../utils/riskCalculations';
+import { getRiskColorClass } from '../utils/riskUtils';
 
 interface PinFactorInspectorProps {
   factors: PinnedLocationFactors | null;

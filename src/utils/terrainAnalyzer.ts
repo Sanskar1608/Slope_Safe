@@ -1,5 +1,5 @@
 import { PinnedLocationFactors, RiskLevel } from '../types';
-import { estimateSlopeRisk } from './riskCalculations';
+import { estimateSlopeRisk } from './riskUtils';
 
 /**
  * High-precision terrain and geotechnical factor detector for any pinned coordinate.

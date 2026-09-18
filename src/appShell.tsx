@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { MonitoredLocation, SystemAlert, UserLiveLocation, GeolocationStatus, AppSettings, PinnedLocationFactors } from './types';
 import { INITIAL_LOCATIONS, INITIAL_ALERTS } from './data/mockLocations';
-import { Navbar } from './components/Navbar';
-import { RiskMap } from './components/RiskMap';
-import { DashboardOverview } from './components/DashboardOverview';
-import { AlertsModal } from './components/AlertsModal';
-import { TerrainEvaluatorModal } from './components/TerrainEvaluatorModal';
-import { AppSettingsModal } from './components/AppSettingsModal';
-import { UserVicinityRiskCard } from './components/UserVicinityRiskCard';
-import { SlopeSafeLogo } from './components/SlopeSafeLogo';
-import { PinFactorInspector } from './components/PinFactorInspector';
-import { HistoricalLandslidesArchive } from './components/HistoricalLandslidesArchive';
-import { detectFactorsForLocation } from './utils/terrainDetector';
-import { getRiskColorClass, estimateSlopeRisk } from './utils/riskCalculations';
-import { playAlertChime } from './utils/audioAlert';
+import { Navbar } from './components/TopNav';
+import { RiskMap } from './components/HazardMap';
+import { DashboardOverview } from './components/OverviewPanel';
+import { AlertsModal } from './components/AlertsPanel';
+import { TerrainEvaluatorModal } from './components/SiteRiskModal';
+import { AppSettingsModal } from './components/SettingsModal';
+import { UserVicinityRiskCard } from './components/NearbyRiskCard';
+import { SlopeSafeLogo } from './components/BrandLogo';
+import { PinFactorInspector } from './components/FactorInspector';
+import { HistoricalLandslidesArchive } from './components/LandslideHistory';
+import { detectFactorsForLocation } from './utils/terrainAnalyzer';
+import { getRiskColorClass, estimateSlopeRisk } from './utils/riskUtils';
+import { playAlertChime } from './utils/alertSound';
 import {
   MapPin,
   Mountain,

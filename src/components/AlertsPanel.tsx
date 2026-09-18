@@ -1,6 +1,6 @@
 import React from 'react';
 import { SystemAlert, RiskLevel } from '../types';
-import { getRiskColorClass } from '../utils/riskCalculations';
+import { getRiskColorClass } from '../utils/riskUtils';
 import { X, Bell, AlertTriangle, CheckCircle, MapPin, ArrowRight } from 'lucide-react';
 
 interface AlertsModalProps {

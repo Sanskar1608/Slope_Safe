@@ -1,6 +1,6 @@
 import React from 'react';
 import { MonitoredLocation, SystemAlert } from '../types';
-import { getRiskColorClass } from '../utils/riskCalculations';
+import { getRiskColorClass } from '../utils/riskUtils';
 import {
   AlertTriangle,
   CloudRain,

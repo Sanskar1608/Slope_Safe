@@ -5,7 +5,7 @@ import {
   calculateBearing,
   evaluateVicinityLandslideRisk,
   getRiskColorClass,
-} from '../utils/riskCalculations';
+} from '../utils/riskUtils';
 import {
   MapPin,
   Navigation,

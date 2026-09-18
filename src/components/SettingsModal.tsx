@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppSettings } from '../types';
-import { playAlertChime } from '../utils/audioAlert';
+import { playAlertChime } from '../utils/alertSound';
 import {
   X,
   Sliders,

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import { MonitoredLocation, RiskLevel, UserLiveLocation, AppSettings, PinnedLocationFactors } from '../types';
-import { getRiskColorClass } from '../utils/riskCalculations';
+import { getRiskColorClass } from '../utils/riskUtils';
 import {
   Layers,
   Crosshair,

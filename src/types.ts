@@ -1,4 +1,4 @@
-import { MLPredictionResult } from './utils/landslideMLClassifier';
+import { MLPredictionResult } from './utils/landslideClassifier';
 
 export type RiskLevel = 'Low' | 'Moderate' | 'High' | 'Very High';
 

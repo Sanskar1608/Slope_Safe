@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MonitoredLocation, RiskLevel, AiEvaluationResponse } from '../types';
-import { estimateSlopeRisk, getRiskColorClass } from '../utils/riskCalculations';
+import { estimateSlopeRisk, getRiskColorClass } from '../utils/riskUtils';
 import {
   X,
   Compass,

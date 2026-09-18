@@ -1,6 +1,6 @@
 import React from 'react';
 import { MonitoredLocation, SystemAlert, UserLiveLocation, AppSettings } from '../types';
-import { SlopeSafeLogo } from './SlopeSafeLogo';
+import { SlopeSafeLogo } from './BrandLogo';
 import { 
   ShieldAlert, 
   Activity, 

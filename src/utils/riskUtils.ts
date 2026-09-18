@@ -1,5 +1,5 @@
 import { RiskLevel } from '../types';
-import { evaluateLandslideWithML, MLPredictionResult } from './landslideMLClassifier';
+import { evaluateLandslideWithML, MLPredictionResult } from './landslideClassifier';
 
 export function calculateRiskLevel(score: number): RiskLevel {
   if (score >= 75) return 'Very High';
