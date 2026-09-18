@@ -1,0 +1,10 @@
+{
+  "name": "Slope Safe",
+  "description": "AI-Based Landslide Risk Monitoring \u0026 Early Warning System for India, monitoring critical slope sectors across the Western Ghats, Himalayas, and Northeast with real-time risk estimation and geotechnical decision support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

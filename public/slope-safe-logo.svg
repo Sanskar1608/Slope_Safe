@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Shield Border Metallic Gradient -->
+    <linearGradient id="shieldBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="35%" stop-color="#fbbf24" />
+      <stop offset="70%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Shield Interior Shading -->
+    <linearGradient id="shieldFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Mountain Slope Sunny Face -->
+    <linearGradient id="mountainSlopeGrad" x1="20%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Mountain Shadow Facet -->
+    <linearGradient id="mountainShadowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Geological Bedrock Strata Gradient -->
+    <linearGradient id="bedrockGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Deep Earth Sub-Strata -->
+    <linearGradient id="deepEarthGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Radar Pulse Wave Glow -->
+    <linearGradient id="radarWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="highGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Badge Canvas -->
+  <rect x="4" y="4" width="192" height="192" rx="42" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Background Radar Grid Circles -->
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4, 5" opacity="0.35" />
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3, 4" opacity="0.25" />
+
+  <!-- Primary Protective Shield Geometry -->
+  <!-- Path of an aerodynamic safety crest shield -->
+  <path
+    d="M 100 24
+       C 142 24, 168 35, 170 68
+       C 170 120, 136 156, 100 176
+       C 64 156, 30 120, 30 68
+       C 32 35, 58 24, 100 24 Z"
+    fill="url(#shieldFillGrad)"
+    stroke="url(#shieldBorderGrad)"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Shield Inner Accent Border Trace -->
+  <path
+    d="M 100 32
+       C 136 32, 158 41, 160 70
+       C 160 114, 130 146, 100 165
+       C 70 146, 40 114, 40 70
+       C 42 41, 64 32, 100 32 Z"
+    fill="none"
+    stroke="#38bdf8"
+    stroke-width="1"
+    stroke-dasharray="6, 4"
+    opacity="0.3"
+  />
+
+  <!-- ================= MOUNTAIN SLOPE & GEOLOGICAL STRATA ================= -->
+  <!-- Deep Base Strata Layer (Bedrock Anchor) -->
+  <path
+    d="M 44 116
+       L 100 164
+       C 114 156, 128 145, 138 134
+       L 108 116
+       L 78 126
+       Z"
+    fill="url(#deepEarthGrad)"
+    stroke="#1e293b"
+    stroke-width="1"
+  />
+
+  <!-- Stabilized Bedrock Geological Strata (Green/Teal layer showing reinforced slope foundation) -->
+  <path
+    d="M 43 96
+       L 100 144
+       L 156 108
+       L 142 98
+       L 100 124
+       L 62 88
+       Z"
+    fill="url(#bedrockGrad)"
+    opacity="0.95"
+  />
+  <!-- Strata Texture Grain Marks -->
+  <path d="M 68 108 L 92 122" stroke="#6ee7b7" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 106 128 L 132 112" stroke="#6ee7b7" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 52 102 L 70 114" stroke="#6ee7b7" stroke-width="1.2" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Shaded Mountain Massif (North/Shadow Face) -->
+  <path
+    d="M 100 48
+       L 100 124
+       L 62 88
+       L 43 96
+       C 40 82, 42 70, 44 64
+       Z"
+    fill="url(#mountainShadowGrad)"
+  />
+
+  <!-- Main Steep Incline Slope (South Sunlit Hazard Face - Amber/Gold) -->
+  <!-- Represents the vulnerable slope monitored for displacement -->
+  <path
+    d="M 100 48
+       L 156 108
+       L 100 124
+       Z"
+    fill="url(#mountainSlopeGrad)"
+  />
+
+  <!-- Secondary Mountain Peak / Ridge Line (Creates dramatic topographic depth) -->
+  <path
+    d="M 72 64
+       L 100 48
+       L 100 124
+       Z"
+    fill="#475569"
+    opacity="0.6"
+  />
+
+  <!-- High-Contrast Ridge Crest Line -->
+  <path
+    d="M 100 48 L 100 124"
+    stroke="#fef08a"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- Slope Topographic Contour Vectors (Curved lines indicating slope gradient & elevation) -->
+  <path
+    d="M 100 68 C 114 74, 130 82, 142 94"
+    fill="none"
+    stroke="#fef08a"
+    stroke-width="1.2"
+    stroke-dasharray="3, 2"
+    opacity="0.8"
+  />
+  <path
+    d="M 100 86 C 112 92, 124 98, 132 106"
+    fill="none"
+    stroke="#fef08a"
+    stroke-width="1.2"
+    stroke-dasharray="3, 2"
+    opacity="0.8"
+  />
+  <path
+    d="M 100 104 C 108 108, 116 112, 120 116"
+    fill="none"
+    stroke="#fef08a"
+    stroke-width="1.2"
+    stroke-dasharray="3, 2"
+    opacity="0.8"
+  />
+
+  <!-- Geotechnical Structural Soil Nails / Anchors (Protective stabilization engineering) -->
+  <line x1="116" y1="84" x2="110" y2="100" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" />
+  <circle cx="116" cy="84" r="2.5" fill="#38bdf8" />
+  <line x1="134" y1="96" x2="128" y2="112" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" />
+  <circle cx="134" cy="96" r="2.5" fill="#38bdf8" />
+
+  <!-- ================= EARLY WARNING RADAR / SENSOR TELEMETRY ================= -->
+  <!-- Sonar / Radar Waves Sweeping over the Slope -->
+  <path
+    d="M 112 40 A 24 24 0 0 1 136 64"
+    fill="none"
+    stroke="#38bdf8"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.85"
+    filter="url(#softGlow)"
+  />
+  <path
+    d="M 120 32 A 38 38 0 0 1 154 66"
+    fill="none"
+    stroke="#06b6d4"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    opacity="0.6"
+  />
+  <path
+    d="M 128 24 A 52 52 0 0 1 170 68"
+    fill="none"
+    stroke="#38bdf8"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-dasharray="3, 3"
+    opacity="0.4"
+  />
+
+  <!-- Top Sensor Sentinel Beacon on Mountain Crest -->
+  <circle cx="100" cy="48" r="8" fill="#0284c7" opacity="0.3" filter="url(#highGlow)" />
+  <circle cx="100" cy="48" r="4.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+  <circle cx="100" cy="48" r="1.8" fill="#ffffff" />
+
+  <!-- Early Warning Shield Safety Arc at Summit -->
+  <path
+    d="M 78 30 Q 100 22 122 30"
+    fill="none"
+    stroke="#fbbf24"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+
+  <!-- Bottom Stable Horizon Foundation Line -->
+  <path
+    d="M 52 144 Q 100 174 148 144"
+    fill="none"
+    stroke="#10b981"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.7"
+  />
+</svg>
